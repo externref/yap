@@ -1,0 +1,39 @@
+site_name: yap
+site_url: https://yap.externref.tech
+
+theme:
+  name: material
+  logo: assets/icon.png
+  favicon: assets/icon.png
+  custom_dir: overrides
+  
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+plugins:
+  - blog:
+      blog_dir: .
+  - social:
+      cards_color:
+        fill: "#1b1d1f"
+       
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
