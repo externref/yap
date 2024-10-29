@@ -6,30 +6,30 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Arch Install walkthrough for future reference.">
       
       
-        <link rel="canonical" href="https://yap.externref.tech/category/linux/">
+      
+        <link rel="canonical" href="https://yap.externref.tech/2024/10/29/installing-arch-for-dummies-me/">
       
       
-        <link rel="prev" href="../cli/">
+        <link rel="prev" href="../../../09/24/function-overloading-in-python/">
       
       
-        <link rel="next" href="../oop/">
       
-      
-      <link rel="icon" href="../../assets/icon.png">
+      <link rel="icon" href="../../../../assets/icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
     
     
       
-        <title>linux - yap</title>
+        <title>Installing Arch for dummies (me) - yap</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.06209087.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="linux - yap" >
+        <meta  property="og:title"  content="Installing Arch for dummies (me) - yap" >
       
-        <meta  property="og:description"  content="None" >
+        <meta  property="og:description"  content="Arch Install walkthrough for future reference." >
       
-        <meta  property="og:image"  content="https://yap.externref.tech/assets/images/social/category/linux.png" >
+        <meta  property="og:image"  content="https://yap.externref.tech/assets/images/social/posts/arch_install.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://yap.externref.tech/category/linux/" >
+        <meta  property="og:url"  content="https://yap.externref.tech/2024/10/29/installing-arch-for-dummies-me/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="linux - yap" >
+        <meta  name="twitter:title"  content="Installing Arch for dummies (me) - yap" >
       
-        <meta  name="twitter:description"  content="None" >
+        <meta  name="twitter:description"  content="Arch Install walkthrough for future reference." >
       
-        <meta  name="twitter:image"  content="https://yap.externref.tech/assets/images/social/category/linux.png" >
+        <meta  name="twitter:image"  content="https://yap.externref.tech/assets/images/social/posts/arch_install.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux" class="md-skip">
+        <a href="#installing-arch-for-dummies-me" class="md-skip">
           Skip to content
         </a>
       
@@ -116,9 +116,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="yap" class="md-header__button md-logo" aria-label="yap" data-md-component="logo">
+    <a href="../../../.." title="yap" class="md-header__button md-logo" aria-label="yap" data-md-component="logo">
       
-  <img src="../../assets/icon.png" alt="logo">
+  <img src="../../../../assets/icon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -135,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              linux
+              Installing Arch for dummies (me)
             
           </span>
         </div>
@@ -239,7 +239,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -248,9 +250,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="yap" class="md-nav__button md-logo" aria-label="yap" data-md-component="logo">
+    <a href="../../../.." title="yap" class="md-nav__button md-logo" aria-label="yap" data-md-component="logo">
       
-  <img src="../../assets/icon.png" alt="logo">
+  <img src="../../../../assets/icon.png" alt="logo">
 
     </a>
     yap
@@ -274,12 +276,14 @@
       
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -336,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archive/2024/" class="md-nav__link">
+      <a href="../../../../archive/2024/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -361,19 +365,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -387,7 +389,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Categories
@@ -403,7 +405,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arch/" class="md-nav__link">
+      <a href="../../../../category/arch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cli/" class="md-nav__link">
+      <a href="../../../../category/cli/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,34 +446,12 @@
                 
   
   
-    
-  
   
     
-      
-    
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    linux
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../category/linux/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,44 +460,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installing-arch-for-dummies-me" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installing Arch for dummies (me)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux-how-tos-a-must-know-list-of-commands-in-linux-shells" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux How-TOs ❓ | A must know list of commands in Linux shells
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -532,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../oop/" class="md-nav__link">
+      <a href="../../../../category/oop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -555,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../../../category/python/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -578,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shell/" class="md-nav__link">
+      <a href="../../../../category/shell/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,6 +549,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -626,20 +570,125 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing-arch-for-dummies-me" class="md-nav__link">
+  <a href="#installating-the-os" class="md-nav__link">
     <span class="md-ellipsis">
-      Installing Arch for dummies (me)
+      Installating the OS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installating the OS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-an-installation-medium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating an Installation Medium
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#linux-how-tos-a-must-know-list-of-commands-in-linux-shells" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#booting-and-pre-install-configs" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux How-TOs ❓ | A must know list of commands in Linux shells
+      Booting and Pre Install configs.
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Booting and Pre Install configs.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-to-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect to internet
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-internet-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify internet connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paritioning-and-formatting-disks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paritioning and Formatting Disks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paritioning and Formatting Disks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disk-partitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disk partitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-filesystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating filesystems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mouting-the-filesystems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mouting the filesystems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arch-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arch Install
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arch Install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -652,48 +701,105 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h1 id="linux">linux</h1>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/externref.png" alt="sarthak">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-10-29 00:00:00">Tuesday, October 29, 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
             
-              <a href="./" class="md-meta__link">linux</a>, 
-              <a href="../arch/" class="md-meta__link">arch</a></li>
-        
-        
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/externref.png" alt="sarthak">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          sarthak
+                        
+                      </strong>
+                      <br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2024-10-29 00:00:00" class="md-ellipsis">Tuesday, October 29, 2024</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../../../../category/linux/">linux</a>, 
+                              <a href="../../../../category/arch/">arch</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              5 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
           
-          <li class="md-meta__item">
-            
-              5 min read
-            
-          </li>
-        
-      </ul>
-      
+        </div>
+      </div>
     </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="installing-arch-for-dummies-me"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/">Installing Arch for dummies (me)</a></h2>
+    <article class="md-content__inner md-typeset">
+      
+        
+
+  
+    <a href="https://github.com/externref/yap/edit/main/docs/posts/arch_install.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="installing-arch-for-dummies-me">Installing Arch for dummies (me)</h1>
 <p><a href="https://archlinux.org/">Arch Linux</a> is a lightweight and flexible Linux distribution that provides full customisation options with minimal pre-install configuration options and less bloatware. The installation and setup process, however, is a bit complicated and different than most daily dirving Linux Distros like Ubuntu, Fedora, etc...</p>
 <p>Even though there are custom ISOs with GUI installers available, its safer to use the officially released ISOs version. This blog is a walkthrough for steps involved in installation of the OS with the <code>i3-wm</code> desktop environment. All these instructions can be found on <a href="https://wiki.archlinux.org/title/Installation_guide">The Installation guide</a> with some difference in commands used.</p>
 <div class="admonition note">
@@ -701,8 +807,8 @@
 <p>The screenshots are from a VirtualBox setup for a clearer demonstration of the process. The installation process is same.</p>
 </div>
 <p>My dotfiles: <a href="https://github.com/externref/dotfiles">@externref/dotfiles</a></p>
-<h3 id="installating-the-os"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#installating-the-os">Installating the OS</a></h3>
-<h4 id="creating-an-installation-medium"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#creating-an-installation-medium">Creating an Installation Medium</a></h4>
+<h2 id="installating-the-os">Installating the OS</h2>
+<h3 id="creating-an-installation-medium">Creating an Installation Medium</h3>
 <p>To install arch you need to load it into an installation medium like a USB Drive, Optical Disc or any memory device.</p>
 <p><img align="right" alt="rufus" src="/assets/arch_install/rufus_home.png" width="300" /></p>
 <ul>
@@ -710,7 +816,7 @@
 <li>Setup your utility for creating the bootable drive, we are going to use <a href="https://rufus.ie/en/">Rufus</a> which is a lightweight tool for flashing USBs. (You might want to use the <a href="https://www.balena.io/etcher">Balena Etcher</a> utility on a linux distribution.)</li>
 <li>Download and launch the rufus executable and select the USB device and the ISO image that you downloaded. Click on Start and proceed further with the recommended options.</li>
 </ul>
-<h4 id="booting-and-pre-install-configs"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#booting-and-pre-install-configs">Booting and Pre Install configs.</a></h4>
+<h3 id="booting-and-pre-install-configs">Booting and Pre Install configs.</h3>
 <p>Restart the System to open the BIOS menu and select the device that was flashed with the Arch ISO.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -719,7 +825,7 @@
 <p>On booting, you should enter into a Grub screen with Arch Linux Installation medium and other options.</p>
 <p><img alt="grub1" src="/assets/arch_install/grub1.png" /></p>
 <p>Upon booting you should see the arch installation terminal with some instructions.</p>
-<h5 id="connect-to-internet"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#connect-to-internet">Connect to internet</a></h5>
+<h4 id="connect-to-internet">Connect to internet</h4>
 <p>Before anything, you should be connected to the internet. 
 Run the <code>iwctl</code> utility to open an interface to connected to the desired network.</p>
 <ul>
@@ -727,10 +833,10 @@ Run the <code>iwctl</code> utility to open an interface to connected to the desi
 <li>Scan the station using <code>station [wlan_name] scan</code>.</li>
 <li>Connect to the desired network using <code>station [wlan_name] connect [device_name]</code>.</li>
 </ul>
-<h5 id="verify-internet-connection"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#verify-internet-connection">Verify internet connection</a></h5>
+<h4 id="verify-internet-connection">Verify internet connection</h4>
 <p>Use the <code>ping</code> command to check internet connection. It should produce an output like this </p>
 <p><img alt="ping" src="/assets/arch_install/ping.png" /></p>
-<h4 id="paritioning-and-formatting-disks"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#paritioning-and-formatting-disks">Paritioning and Formatting Disks</a></h4>
+<h3 id="paritioning-and-formatting-disks">Paritioning and Formatting Disks</h3>
 <p>You need 2 disk partitions in order to install Arch Linux.</p>
 <table>
 <thead>
@@ -756,7 +862,7 @@ Run the <code>iwctl</code> utility to open an interface to connected to the desi
 </tr>
 </tbody>
 </table>
-<h5 id="disk-partitions"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#disk-partitions">Disk partitions</a></h5>
+<h4 id="disk-partitions">Disk partitions</h4>
 <p>Use the <code>lsblk</code> command to check the current memory condition.</p>
 <p><img alt="lsblk" src="/assets/arch_install/lsblk_pre.png" /></p>
 <p>Remember the address of the disk where the system is to be installed.</p>
@@ -775,21 +881,21 @@ Run the <code>iwctl</code> utility to open an interface to connected to the desi
 <img alt="" src="/assets/arch_install/write.png" />
 <img alt="" src="/assets/arch_install/lsblk_post.png" /></p>
 </details>
-<h5 id="creating-filesystems"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#creating-filesystems">Creating filesystems</a></h5>
+<h4 id="creating-filesystems">Creating filesystems</h4>
 <p>Now, format the partitions into the required filesystem types.
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkfs.fat<span class="w"> </span>-F<span class="w"> </span><span class="m">32</span><span class="w"> </span>/dev/&lt;boot_partition&gt;<span class="w"> </span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>mkfs.ext4<span class="w"> </span>/dev/&lt;root_patition&gt;
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkfs.fat<span class="w"> </span>-F<span class="w"> </span><span class="m">32</span><span class="w"> </span>/dev/&lt;boot_partition&gt;<span class="w"> </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mkfs.ext4<span class="w"> </span>/dev/&lt;root_patition&gt;
 </span></code></pre></div></p>
 <p>This command formats the disks into the required fs types.</p>
 <p><img alt="" src="/assets/arch_install/mkfs.png" /></p>
-<h5 id="mouting-the-filesystems"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#mouting-the-filesystems">Mouting the filesystems</a></h5>
+<h4 id="mouting-the-filesystems">Mouting the filesystems</h4>
 <p>Now, we mount the filsystems on the disk.</p>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mount<span class="w"> </span>/dev/&lt;root_parition&gt;<span class="w"> </span>/mnt
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>mount<span class="w"> </span>--mkdir<span class="w"> </span>/dev/&lt;boot_partition&gt;<span class="w"> </span>/mnt/boot
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mount<span class="w"> </span>/dev/&lt;root_parition&gt;<span class="w"> </span>/mnt
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>mount<span class="w"> </span>--mkdir<span class="w"> </span>/dev/&lt;boot_partition&gt;<span class="w"> </span>/mnt/boot
 </span></code></pre></div>
 <p><img alt="" src="/assets/arch_install/mount.png" /></p>
 <p>This was all the manual configuration, in further steps, we'll be using the <a href="https://wiki.archlinux.org/title/Archinstall">archinstall</a> script for easier installation.</p>
-<h4 id="arch-install"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#arch-install">Arch Install</a></h4>
+<h3 id="arch-install">Arch Install</h3>
 <p>Run the <code>archinstall</code> command in the terminal. It will open an interface stating various install options with some pre-set ones.</p>
 <p><img alt="" src="/assets/arch_install/archinstall.png" /></p>
 <ul>
@@ -801,7 +907,7 @@ Run the <code>iwctl</code> utility to open an interface to connected to the desi
 <li>Use <code>NetworkManager</code> for the network configs.</li>
 <li>Select your timezone by searching it throught <code>/</code>.</li>
 </ul>
-<h6 id="profile"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#profile">Profile</a></h6>
+<h5 id="profile">Profile</h5>
 <p>We'll be using <a href="https://i3wm.org/">i3-wm</a> for this installation, you can choose the desktop environment you want and continue with it.</p>
 <ul>
 <li>Go to <code>Profile</code> and select <code>Desktop</code>.</li>
@@ -816,72 +922,99 @@ Run the <code>iwctl</code> utility to open an interface to connected to the desi
 <p><img alt="" src="/assets/arch_install/chroot.png" /></p>
 <p>Enter in prompt if you have anything else to configure. </p>
 <p><strong>Your Arch Linux installation is not completed and can be booted into.</strong></p>
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://github.com/externref.png" alt="sarthak">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-09-23 00:00:00">Monday, September 23, 2024</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="./" class="md-meta__link">linux</a>, 
-              <a href="../shell/" class="md-meta__link">shell</a>, 
-              <a href="../cli/" class="md-meta__link">cli</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              6 min read
-            
-          </li>
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="linux-how-tos-a-must-know-list-of-commands-in-linux-shells"><a class="toclink" href="../../2024/09/23/linux-how-tos--a-must-know-list-of-commands-in-linux-shells/">Linux How-TOs ❓ | A must know list of commands in Linux shells</a></h2>
-<p>Hello Everyone 👋.</p>
-<p>Here's a list of useful tools and commands that are required often for using Linux as a daily driver or even only for development.</p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../2024/09/23/linux-how-tos--a-must-know-list-of-commands-in-linux-shells/">
-          Continue reading
-        </a>
-      </nav>
-    
-  </div>
-</article>
-      
-      
-        
-          
 
 
 
-<nav class="md-pagination">
+
+
+
+
   
-</nav>
-        
+  
+
+
+  <aside class="md-source-file">
+    
+    
+    
       
-    </div>
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:shiva02939@gmail.com">externref</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+  
+
+
+
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+        data-repo="externref/yap"
+        data-repo-id="R_kgDOM13QTg"
+        data-category-id="DIC_kwDOM13QTs4CityS"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+      
+    </article>
   </div>
 
           
@@ -966,10 +1099,10 @@ Run the <code>iwctl</code> utility to open an interface to connected to the desi
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "header.autohide"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>

@@ -2,38 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://yap.externref.tech/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://yap.externref.tech/2024/10/29/installing-arch-for-dummies-me/</loc>
+         <lastmod>2024-10-29</lastmod>
     </url>
     <url>
          <loc>https://yap.externref.tech/2024/09/23/linux-how-tos--a-must-know-list-of-commands-in-linux-shells/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-29</lastmod>
     </url>
     <url>
          <loc>https://yap.externref.tech/2024/09/24/function-overloading-in-python/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-29</lastmod>
     </url>
     <url>
          <loc>https://yap.externref.tech/archive/2024/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://yap.externref.tech/category/python/</loc>
-         <lastmod>2024-09-23</lastmod>
-    </url>
-    <url>
-         <loc>https://yap.externref.tech/category/oop/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-29</lastmod>
     </url>
     <url>
          <loc>https://yap.externref.tech/category/linux/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://yap.externref.tech/category/arch/</loc>
+         <lastmod>2024-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://yap.externref.tech/category/python/</loc>
+         <lastmod>2024-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://yap.externref.tech/category/oop/</loc>
+         <lastmod>2024-10-29</lastmod>
     </url>
     <url>
          <loc>https://yap.externref.tech/category/shell/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-29</lastmod>
     </url>
     <url>
          <loc>https://yap.externref.tech/category/cli/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <lastmod>2024-10-29</lastmod>
     </url>
 </urlset>

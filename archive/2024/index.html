@@ -384,6 +384,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#installing-arch-for-dummies-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Arch for dummies (me)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#function-overloading-in-python" class="md-nav__link">
     <span class="md-ellipsis">
       Function overloading in Python
@@ -451,6 +460,29 @@
             Categories
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../category/arch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    arch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -601,6 +633,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#installing-arch-for-dummies-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Arch for dummies (me)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#function-overloading-in-python" class="md-nav__link">
     <span class="md-ellipsis">
       Function overloading in Python
@@ -632,6 +673,168 @@
       <header class="md-typeset">
         <h1 id="2024">2024</h1>
       </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://github.com/externref.png" alt="sarthak">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-29 00:00:00">Tuesday, October 29, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/linux/" class="md-meta__link">linux</a>, 
+              <a href="../../category/arch/" class="md-meta__link">arch</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="installing-arch-for-dummies-me"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/">Installing Arch for dummies (me)</a></h2>
+<p><a href="https://archlinux.org/">Arch Linux</a> is a lightweight and flexible Linux distribution that provides full customisation options with minimal pre-install configuration options and less bloatware. The installation and setup process, however, is a bit complicated and different than most daily dirving Linux Distros like Ubuntu, Fedora, etc...</p>
+<p>Even though there are custom ISOs with GUI installers available, its safer to use the officially released ISOs version. This blog is a walkthrough for steps involved in installation of the OS with the <code>i3-wm</code> desktop environment. All these instructions can be found on <a href="https://wiki.archlinux.org/title/Installation_guide">The Installation guide</a> with some difference in commands used.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The screenshots are from a VirtualBox setup for a clearer demonstration of the process. The installation process is same.</p>
+</div>
+<p>My dotfiles: <a href="https://github.com/externref/dotfiles">@externref/dotfiles</a></p>
+<h3 id="installating-the-os"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#installating-the-os">Installating the OS</a></h3>
+<h4 id="creating-an-installation-medium"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#creating-an-installation-medium">Creating an Installation Medium</a></h4>
+<p>To install arch you need to load it into an installation medium like a USB Drive, Optical Disc or any memory device.</p>
+<p><img align="right" alt="rufus" src="/assets/arch_install/rufus_home.png" width="300" /></p>
+<ul>
+<li>First, download the ISO file from one of the sources listed on the <a href="https://archlinux.org/download/">download page</a>. You need the file with <code>.iso</code> extension from the respective sources.</li>
+<li>Setup your utility for creating the bootable drive, we are going to use <a href="https://rufus.ie/en/">Rufus</a> which is a lightweight tool for flashing USBs. (You might want to use the <a href="https://www.balena.io/etcher">Balena Etcher</a> utility on a linux distribution.)</li>
+<li>Download and launch the rufus executable and select the USB device and the ISO image that you downloaded. Click on Start and proceed further with the recommended options.</li>
+</ul>
+<h4 id="booting-and-pre-install-configs"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#booting-and-pre-install-configs">Booting and Pre Install configs.</a></h4>
+<p>Restart the System to open the BIOS menu and select the device that was flashed with the Arch ISO.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Make sure to disable <code>Secure Boot</code> option from your system settings during the installation process, you can re-enable it after installing.</p>
+</div>
+<p>On booting, you should enter into a Grub screen with Arch Linux Installation medium and other options.</p>
+<p><img alt="grub1" src="/assets/arch_install/grub1.png" /></p>
+<p>Upon booting you should see the arch installation terminal with some instructions.</p>
+<h5 id="connect-to-internet"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#connect-to-internet">Connect to internet</a></h5>
+<p>Before anything, you should be connected to the internet. 
+Run the <code>iwctl</code> utility to open an interface to connected to the desired network.</p>
+<ul>
+<li>Use the <code>device list</code> to list all the available devices, if you're using a WIFI network it should be a wlan network.</li>
+<li>Scan the station using <code>station [wlan_name] scan</code>.</li>
+<li>Connect to the desired network using <code>station [wlan_name] connect [device_name]</code>.</li>
+</ul>
+<h5 id="verify-internet-connection"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#verify-internet-connection">Verify internet connection</a></h5>
+<p>Use the <code>ping</code> command to check internet connection. It should produce an output like this </p>
+<p><img alt="ping" src="/assets/arch_install/ping.png" /></p>
+<h4 id="paritioning-and-formatting-disks"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#paritioning-and-formatting-disks">Paritioning and Formatting Disks</a></h4>
+<p>You need 2 disk partitions in order to install Arch Linux.</p>
+<table>
+<thead>
+<tr>
+<th>disk</th>
+<th>recommended memory</th>
+<th>mount point</th>
+<th>fs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boot</td>
+<td>1GiB</td>
+<td><code>/mnt/boot</code></td>
+<td>FAT32</td>
+</tr>
+<tr>
+<td>root</td>
+<td>~30-40GiB</td>
+<td><code>/mnt</code></td>
+<td>EXT4</td>
+</tr>
+</tbody>
+</table>
+<h5 id="disk-partitions"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#disk-partitions">Disk partitions</a></h5>
+<p>Use the <code>lsblk</code> command to check the current memory condition.</p>
+<p><img alt="lsblk" src="/assets/arch_install/lsblk_pre.png" /></p>
+<p>Remember the address of the disk where the system is to be installed.</p>
+<p>Use the <code>cfdisk</code> command to create partition. You need an unallocated space of around 40 GiB minimum to install daily driving arch.</p>
+<p>Use <code>cfdisk /dev/&lt;disk_name&gt;</code> to open the cfdisk interface.</p>
+<p><img alt="cfdisk" src="/assets/arch_install/cfdisk.png" /></p>
+<p>You can see the empty patition in the screenshot, we'll be using this to create our arch patitions.</p>
+<ul>
+<li>Create a 1GiB partition and give it type EFI System.</li>
+<li>Allocate the rest to the linux filesystem partition.</li>
+</ul>
+<details class="screenshots">
+<summary>Screenshots</summary>
+<p><img alt="" src="/assets/arch_install/cfdisk.png" />
+<img alt="" src="/assets/arch_install/efi_sys.png" />
+<img alt="" src="/assets/arch_install/write.png" />
+<img alt="" src="/assets/arch_install/lsblk_post.png" /></p>
+</details>
+<h5 id="creating-filesystems"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#creating-filesystems">Creating filesystems</a></h5>
+<p>Now, format the partitions into the required filesystem types.
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkfs.fat<span class="w"> </span>-F<span class="w"> </span><span class="m">32</span><span class="w"> </span>/dev/&lt;boot_partition&gt;<span class="w"> </span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>mkfs.ext4<span class="w"> </span>/dev/&lt;root_patition&gt;
+</span></code></pre></div></p>
+<p>This command formats the disks into the required fs types.</p>
+<p><img alt="" src="/assets/arch_install/mkfs.png" /></p>
+<h5 id="mouting-the-filesystems"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#mouting-the-filesystems">Mouting the filesystems</a></h5>
+<p>Now, we mount the filsystems on the disk.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mount<span class="w"> </span>/dev/&lt;root_parition&gt;<span class="w"> </span>/mnt
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>mount<span class="w"> </span>--mkdir<span class="w"> </span>/dev/&lt;boot_partition&gt;<span class="w"> </span>/mnt/boot
+</span></code></pre></div>
+<p><img alt="" src="/assets/arch_install/mount.png" /></p>
+<p>This was all the manual configuration, in further steps, we'll be using the <a href="https://wiki.archlinux.org/title/Archinstall">archinstall</a> script for easier installation.</p>
+<h4 id="arch-install"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#arch-install">Arch Install</a></h4>
+<p>Run the <code>archinstall</code> command in the terminal. It will open an interface stating various install options with some pre-set ones.</p>
+<p><img alt="" src="/assets/arch_install/archinstall.png" /></p>
+<ul>
+<li>Go to the <code>Disk Configuration</code> option, and use the pre configured mount option from create partitions option. Enter <code>/mnt</code> as the value and press enter. Confirm and exit.</li>
+<li>Select <code>Grub</code> as the bootloader.</li>
+<li>In the User settings create a new user with desired configurations.</li>
+<li>Profile configs [below]</li>
+<li>Select <code>Pipewire</code> or <code>Pulseaudio</code> for the audio server.</li>
+<li>Use <code>NetworkManager</code> for the network configs.</li>
+<li>Select your timezone by searching it throught <code>/</code>.</li>
+</ul>
+<h6 id="profile"><a class="toclink" href="../../2024/10/29/installing-arch-for-dummies-me/#profile">Profile</a></h6>
+<p>We'll be using <a href="https://i3wm.org/">i3-wm</a> for this installation, you can choose the desktop environment you want and continue with it.</p>
+<ul>
+<li>Go to <code>Profile</code> and select <code>Desktop</code>.</li>
+<li>Select <code>i3-wm</code> (using Tab) in the desktop environment options.</li>
+<li>Select <code>ly</code> as the login screen.</li>
+</ul>
+<p>Save and go back to main screen.</p>
+<p>This is what your configs should look like after setting up everything.</p>
+<p><img alt="" src="/assets/arch_install/final.png" /></p>
+<p>Select <code>Install</code> and press enter and watch the magic happen!.</p>
+<p>You should be greeted with this screen once you're done installing arch.</p>
+<p><img alt="" src="/assets/arch_install/chroot.png" /></p>
+<p>Enter in prompt if you have anything else to configure. </p>
+<p><strong>Your Arch Linux installation is not completed and can be booted into.</strong></p>
+    
+  </div>
+</article>
       
         <article class="md-post md-post--excerpt">
   <header class="md-post__header">
