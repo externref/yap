@@ -26,11 +26,12 @@ My dotfiles: [@externref/dotfiles](https://github.com/externref/dotfiles)
 ### Creating an Installation Medium
 To install arch you need to load it into an installation medium like a USB Drive, Optical Disc or any memory device.
 
-![rufus](/assets/arch_install/rufus_home.png){ width="300" align="right" }
-
 * First, download the ISO file from one of the sources listed on the [download page](https://archlinux.org/download/). You need the file with `.iso` extension from the respective sources.
 * Setup your utility for creating the bootable drive, we are going to use [Rufus](https://rufus.ie/en/) which is a lightweight tool for flashing USBs. (You might want to use the [Balena Etcher](https://www.balena.io/etcher) utility on a linux distribution.)
 * Download and launch the rufus executable and select the USB device and the ISO image that you downloaded. Click on Start and proceed further with the recommended options.
+
+??? screenshot
+   ![rufus](/assets/arch_install/rufus_home.png)
 
 ### Booting and Pre Install configs.
 
