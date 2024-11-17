@@ -31,7 +31,7 @@ To install arch you need to load it into an installation medium like a USB Drive
 * Download and launch the rufus executable and select the USB device and the ISO image that you downloaded. Click on Start and proceed further with the recommended options.
 
 ??? screenshot
-   ![rufus](/assets/arch_install/rufus_home.png)
+    ![rufus](/assets/arch_install/rufus_home.png)
 
 ### Booting and Pre Install configs.
 
